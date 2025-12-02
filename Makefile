@@ -6,7 +6,7 @@ ifeq ($(OS),Windows_NT)
 endif
 
 CC      ?= gcc
-CFLAGS  ?= -std=c11 -O0 -g -Wall -Wextra -Wpedantic -Isrc
+CFLAGS  ?= -std=c11 -O0 -g -Wall -Wextra -Wpedantic -Isrc -fsanitize=address,undefined
 LDFLAGS ?=
 SRC     := $(wildcard src/*.c)
 OUTDIR  := build
