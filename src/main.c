@@ -8,7 +8,7 @@ int main(void){
     int s = sum_u8((const uint8_t*)BUF, 15);
     printf("sum=%d\n", s);
 
-    write_tail(16, 0xAA);
+    write_tail(15, 0xAA);
 
     puts("done");
     return 0;
